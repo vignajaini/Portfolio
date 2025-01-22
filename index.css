@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #0e0d0d;
+    box-sizing: border-box; 
+}
+
+.card {
+    background: rgb(247, 204, 204);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    max-width: 600px; 
+    width: 90%;
+    height: 500px; 
+    border: 1px solid #d2cdcd; 
+    box-sizing: border-box;
+}
+
+  
+  .card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+
+  .view-resume-btn {
+    display: inline-block;
+    background-color: #80acdb;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .view-resume-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon i {
+    padding:50%;
+    margin-right: 8px;
+  }
+  
+  .social-icon.linkedin:hover {
+    color: #0077b5; 
+  }
+  
+  .social-icon.github:hover {
+    color: #333;
+  }
+  .resume-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%; 
+    width: 500px; 
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
