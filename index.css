@@ -7,71 +7,63 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    background-color: #0e0d0d;
+    background-image: linear-gradient(to right top, #67404e,
+     #614057, #58425f, #4c4465, #3b4769, #2d4d6e, #1b5370, #005870, #00626f, #006b65, #087255, #3c7741);
     box-sizing: border-box; 
 }
 
 .card {
-    background: rgb(247, 204, 204);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-    text-align: center;
-    max-width: 600px; 
-    width: 90%;
-    height: 500px; 
-    border: 1px solid #d2cdcd; 
-    box-sizing: border-box;
+  background: #222;
+  padding: 30px;
+  border-radius: 15px;
+  border: 3px solid #007bff;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  height: 500px;
+  box-shadow: 0 6px 25px rgba(0, 123, 255, 0.2);
+  box-sizing: border-box;
+}
+
+.card:hover {
+  border-color: #00d4ff;
+  box-shadow: 0 8px 30px rgba(0, 123, 255, 0.3);
 }
 
   
   .card h1 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #333;
+    color:white;
   }
-  
+  p {
+    color: white; 
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
   .view-resume-btn {
     display: inline-block;
-    background-color: #80acdb;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #007bff, #00d4ff); 
     color: white;
     text-decoration: none;
+    border-radius: 30px; 
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   }
   
   .view-resume-btn:hover {
-    background-color: #0056b3;
-  }
-
-  .social-icon {
-    display: inline-block;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #555;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    background: linear-gradient(135deg, #0056b3, #00aaff);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+    transform: translateY(-3px); 
   }
   
-  .social-icon i {
-    padding:50%;
-    margin-right: 8px;
-  }
-  
-  .social-icon.linkedin:hover {
-    color: #0077b5; 
-  }
-  
-  .social-icon.github:hover {
-    color: #333;
-  }
   .resume-img {
     display: block;
     margin: 0 auto;
@@ -86,4 +78,37 @@ body {
     text-align: center;
     margin-top: 20px; 
   }
-  
+  .rainbow-text {
+    background-image: linear-gradient(to right, violet, rgb(150, 64, 212), rgb(76, 119, 156), green,yellow, orange, red);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 50px; 
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.linkedin:hover {
+  color: #548fbd;
+  transform: scale(1.2);
+}
+
+.github {
+  color: #0077b5;
+}
+
+.github:hover {
+  color: #548fbd;
+  transform: scale(1.2);
+}
+
